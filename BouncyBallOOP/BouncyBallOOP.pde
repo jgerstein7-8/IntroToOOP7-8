@@ -3,20 +3,17 @@ Ball[] balls = new Ball[count];
 
 void setup() {
   size(1600, 1200);
-
-  int i = 0;
-  while (i < count) {
+  for (int i = 0; i < balls.length; i++) {
     balls[i] = new Ball(random(25, 300));      //initialize b as a new object of the Ball class
-    i++;
   }
 }
 
 void draw() {
   background(0);
-
-  int i = 0;
-  while (i < count) {
+  for (int i = 0; i < balls.length; i++) {
     balls[i].run();
-    i++;
+    if (dist(balls[i].loc.x, balls[i].loc.y, mouseX, mouseY) < balls[i].diam/2) {
+      balls[i].c = color(0, random(100, 255), random(255));
+    }
   }
 }
