@@ -11,11 +11,13 @@ void setup() {
 
 void draw() {
   background(0);
-  b.display();         //call b's display() method
-  c.display();
-  d.display();
   b.move();
   c.move();
   d.move();
-
+  b.bounce();
+  c.bounce();
+  d.bounce();
+  b.display();         //call b's display() method
+  c.display();
+  d.display();
 }
