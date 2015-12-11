@@ -9,6 +9,15 @@ class Ball {
     diam = 200;
     loc = new PVector(random(diam, width-diam), random(diam, height-diam));
     vel = PVector.random2D();
+    vel.mult(10);
+    c = color(random(255), random(50), random(100, 255));
+  }
+
+  Ball(int tDiam) {
+    diam = tDiam;
+    loc = new PVector(random(diam, width-diam), random(diam, height-diam));
+    vel = PVector.random2D();
+    vel.mult(10);
     c = color(random(255), random(50), random(100, 255));
   }
 
