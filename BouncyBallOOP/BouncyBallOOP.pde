@@ -4,7 +4,7 @@ Ball d;
 
 void setup() {
   size(1600, 1200);
-  b = new Ball(50);      //initialize b as a new object of the Ball class
+  b = new Ball(width/2,height/2);      //initialize b as a new object of the Ball class
   c = new Ball(200);
   d = new Ball(300);
 }
