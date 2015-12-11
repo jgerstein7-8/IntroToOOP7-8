@@ -22,4 +22,9 @@ class Ball {
   void move() {
     loc.add(vel);
   }
+
+  void run() {
+    display();
+    move();
+  }
 }
