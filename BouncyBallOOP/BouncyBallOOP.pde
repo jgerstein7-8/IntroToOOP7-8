@@ -14,4 +14,7 @@ void draw() {
   b.display();         //call b's display() method
   c.display();
   d.display();
+  b.move();
+  c.move();
+  d.move();
 }
